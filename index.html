@@ -3,18 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about page</title>
+    <title>startup header13</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
-    <div>
- <h1>welcome to html 101</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur <a href="https://www.facebook.com">Facebook</a> adipisicing elit. Earum eveniet quas deleniti eius modi voluptatibus ut numquam maxime quo iste quod similique, voluptatem quisquam
-   error veniam obcaecati aspernatur labore velit adipisci fuga minus tempore nesciunt! Laboriosam ipsum asperiores quos consectetur dolor, odio vero dolores,
- iusto facilis molestiae ipsam fugit voluptatibus!</p>
- <p >Lorem ipsum dolor, sit amet consectetur <a href="https://www.facebook.com">Facebook</a> adipisicing elit. Earum eveniet quas deleniti eius modi voluptatibus ut numquam maxime quo iste quod similique, voluptatem quisquam
-   error veniam obcaecati aspernatur labore velit adipisci fuga minus tempore nesciunt! Laboriosam ipsum asperiores quos consectetur dolor, odio vero dolores,
- iusto facilis molestiae ipsam fugit voluptatibus!</p>
+<main id="top">
+ <div class="bg">
+<header>
+<div class="logo-nav">
+<a href="#top" aria-label="Startup home"><img src="./images/white.png" alt="">
+ </a>
  </div>
-</body>
+ <nav aria-label="Main navigation">
+ <ul>
+  <li><a href="#top">Tour</a></li>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#pricing">Pricing</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><img src="./images/fa-dribbble.png" alt="Dribbble"></li>
+  <li><img src="./images/fa-instagram.png" alt="Instagram"></li>
+  <li><a href="#">Be</a></li>
+  </ul>
+  </nav>
+  <div class="call-to-action">
+  <button class="btn-sign">get started</button>
+  </div>
+</header>
+<section class="hero" aria-labelledby="hero-title">
+<h1 id="hero-title">Create sites without routine</h1>
+<p>Startup gives you complete freedom over your creative process. You don’t have to think about technical details. There are no limits and absolutely no coding.</p>
+</section>
+</div>
+<section class="content" id="pricing" aria-labelledby="pricing-title">
+ <div class="pricing-layout">
+ <div class="pricing-main">
+ <h2 id="pricing-title">Pay as you go</h2>
+ <div class="table-wrap">
+ <table class="pricing-table" aria-label="Pay as you go email pricing">
+ <thead>
+  <tr>
+  <th scope="col">Email credit</th>
+  <th scope="col">Price per email</th>
+  <th scope="col">Prepay amount</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr><td>10,000</td><td>0.02</td><td>$200</td></tr>
+ <tr><td>20,000</td><td>0.01</td><td>$250</td></tr>
+ <tr><td>50,000</td><td>0.01</td><td>$600</td></tr>
+  <tr><td>75,000</td><td>0.01</td><td>$250</td></tr>
+  <tr><td>200,000</td><td>5 / thousand</td><td>$500</td></tr>
+ </tbody>
+ </table>
+  </div>
+</div>
+<aside class="easy-start">
+ <h3>Easy Start</h3>
+ <p>To get started, you select the desired sample and base the entire website on it. It’s that simple!</p>
+ <a href="#" class="learn-more">Learn More</a>
+ </aside>
+ </div>
+</section>
+<section class="feature-showcase" id="features" aria-labelledby="features-title">
+   <div class="feature-layout">
+   <div class="feature-copy">
+   <h2 id="features-title">Better Landing for Your Startup.</h2>
+   <p class="feature-intro">Startup Framework contains components and complex which can easily be integrated into almost any design. All of these components are made in the same style, and can easy be integrated into projects.</p>
+
+ <div class="feature-points">
+  <article class="feature-point">
+  <h3>How Startup Framework Works?</h3>
+  <p>The Generator App is an online tool that helps you to export ready-made templates ready to work as your future website.</p>
+  <a class="feature-link" href="#pricing">Learn More</a>
+ </article>
+
+ <article class="feature-point">
+    <h3>Save Time</h3>
+    <p>Generate new ideas; design new projects. Spend your time creating, not building basic parts.</p>
+    <a class="feature-link" href="#pricing">Learn More</a>
+    </article>
+    </div>
+ </div>
+
+ <div class="feature-photo">
+    <img src="./images/Image.png" alt="Person sitting on a bench under a glass roof" loading="lazy" decoding="async">
+  </div>
+  </div>
+</section>
+
+<section class="signin-section" aria-labelledby="signin-title">
+ <div class="signin-layout">
+ <div class="signin-form-wrap">
+ <h2 id="signin-title">Sign In</h2>
+ <p class="signin-subtitle">Already have an account? <a href="#">Sign Up</a></p>
+
+ <form class="signin-form" action="#">
+ <div class="field-group">
+ <label class="sr-only" for="signin-email">Your email</label>
+  <input id="signin-email" type="email" name="email" placeholder="Your email" aria-label="Your email">
+ </div>
+
+ <div class="field-group">
+    <label class="sr-only" for="signin-password">Your password</label>
+    <input id="signin-password" type="password" name="password" placeholder="Your password" aria-label="Your password">
+ </div>
+
+ <div class="signin-meta">
+    <label class="remember-me" for="remember-me-check">
+    <input id="remember-me-check" type="checkbox" checked>
+    <span>Remember me</span>
+  </label>
+
+  <a href="#" class="forgot-link">Forgot Password?</a>
+  </div>
+
+  <button type="submit" class="signin-button">Sign In</button>
+  </form>
+  </div>
+
+<aside class="signin-note" aria-label="Responsive layout note">
+ <p>We haven't forgotten about responsive layout. With Startup Framework, you can create a website with full mobile support.</p>
+ </aside>
+ </div>
+</section>
+</main>
+ </body>
 </html>
