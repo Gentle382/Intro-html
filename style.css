@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 *{
+ box-sizing: border-box;
  font-family: 'DM Sans', sans-serif;
 }
-html, body{
+html, body{ 
  margin: 0 !important;
  padding: 0 !important;
 }
@@ -322,6 +323,7 @@ body {
 
 .signin-form-wrap {
   width: min(100%, 860px);
+  box-sizing: border-box;
   padding-left: 18px;
 }
 
@@ -433,6 +435,7 @@ body {
 
 .signin-note {
   width: min(100%, 430px);
+  box-sizing: border-box;
   justify-self: end;
   align-self: center;
   display: flex;
@@ -441,8 +444,6 @@ body {
   padding: 24px 26px 20px;
   border: 1px solid rgba(255, 255, 255, 0.45);
   background: rgba(255, 255, 255, 0.04);
-  margin-top: 26px;
-  margin-left: 58px;
 }
 
 .signin-note p {
@@ -465,74 +466,199 @@ body {
   border: 0;
 }
 
-@media (max-width: 700px){
-  .hero h1{
-   font-size: 36px;
+@media (max-width: 700px)
+{ .bg {
+ min-height: 100vh;
+ min-height: 100svh;
+ display: flex;
+ flex-direction: column;
+}
+
+  header {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 16px 0;
   }
 
-  .hero p{
-   font-size: 17px;
+  .logo-nav {
+    margin: 0;
   }
 
-  .content{
-   padding: 48px 20px;
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+  nav {
+    width: 100%;
   }
 
-  .pricing-layout{
-   grid-template-columns: 1fr;
-   gap: 28px;
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+    margin: 0;
+    padding: 0;
   }
 
-  .pricing-main h2{
-   font-size: 26px;
+  nav ul li {
+    margin: 0;
   }
 
-  .feature-layout{
-   grid-template-columns: 1fr;
-   min-height: auto;
+  nav ul li a {
+    font-size: 14px;
   }
 
-  .feature-copy{
-   padding: 32px 24px;
+  nav ul li img {
+    display: block;
+    max-width: 20px;
+    height: auto;
   }
 
-  .feature-copy h2{
-   font-size: 28px;
+  .btn-sign,
+  .btn-sign:hover {
+    margin: 0;
   }
 
-  .feature-points{
-   grid-template-columns: 1fr;
-   gap: 24px;
+  .hero {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto 0;
+    padding: 40px 20px;
   }
 
-  .feature-photo{
-   min-height: 360px;
+  .hero h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .hero p {
+    font-size: clamp(1rem, 4vw, 1.125rem);
+    margin: 18px 0 0;
+  }
+
+  .content {
+    padding: 48px 20px;
+  }
+
+  .pricing-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .pricing-main,
+  .easy-start {
+    min-width: 0;
+  }
+
+  .pricing-main h2 {
+    font-size: clamp(1.5rem, 6vw, 1.75rem);
+  }
+
+  .table-wrap {
+    max-width: 100%;
+  }
+
+  .feature-layout {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: auto;
+  }
+
+  .feature-copy {
+    padding: clamp(28px, 7vw, 40px) 20px;
+  }
+
+  .feature-copy h2 {
+    font-size: clamp(1.75rem, 7vw, 2rem);
+  }
+
+  .feature-points {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .feature-photo {
+    min-height: clamp(220px, 65vw, 360px);
   }
 
   .signin-section {
-    padding: 72px 20px;
+    padding: 48px 20px;
   }
 
   .signin-layout {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
   }
 
-  .signin-form-wrap,
+  .signin-form-wrap {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .signin-form-wrap h2 {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .signin-subtitle {
+    font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+  }
+
+  .field-group input {
+    min-height: 48px;
+    font-size: 16px;
+  }
+
   .signin-note {
     width: 100%;
     justify-self: stretch;
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .signin-note p {
+    font-size: clamp(1rem, 4vw, 1.25rem);
   }
 
   .signin-meta {
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 12px;
+    font-size: clamp(1rem, 4vw, 1.125rem);
   }
 
   .signin-button {
-    width: 100%;
+    min-height: 48px;
   }
- }
+}
+
+@media (max-width: 380px) {
+  header {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  nav ul {
+    gap: 8px 12px;
+  }
+
+  .hero {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .content,
+  .signin-section {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .feature-copy {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .signin-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+ 
